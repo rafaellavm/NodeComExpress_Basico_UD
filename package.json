@@ -1,0 +1,22 @@
+{
+  "name": "introducao_node_js_ud",
+  "version": "1.0.0",
+  "description": "Introdução a NodeJS UD",
+  "main": "app_express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaellavm/NodeComExpress_Basico_UD.git"
+  },
+  "author": "Rafaela Marraschi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaellavm/NodeComExpress_Basico_UD/issues"
+  },
+  "homepage": "https://github.com/rafaellavm/NodeComExpress_Basico_UD#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

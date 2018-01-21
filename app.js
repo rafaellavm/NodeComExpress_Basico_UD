@@ -29,7 +29,7 @@ var server = http.createServer(function(req,res){
             </head>
     
             <body>
-                <h1>Página de home</h1>
+                <h1>Home</h1>
             </body>
         </html>`); //consegue retornar uma informação pro navegador
     }
