@@ -1,41 +1,19 @@
-var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(function(req,res){
+app.set('view engine', 'ejs');
 
-    var pagina = req.url;
-    console.log(pagina)
+app.get('/contato',function(req,res){
 
-    if (pagina == '/contato'){
-        res.end(`
-        <html lang="pt-br">
-    
-            <head>
-                <meta charset="UTF-8">
-                <title>Testando o node</title>
-            </head>
-    
-            <body>
-                <h1>Página de contato</h1>
-            </body>
-        </html>`); //consegue retornar uma informação pro navegador
-    }
-    else{
-        res.end(`
-        <html lang="pt-br">
-    
-            <head>
-                <meta charset="UTF-8">
-                <title>Testando o node</title>
-            </head>
-    
-            <body>
-                <h1>Home</h1>
-            </body>
-        </html>`); //consegue retornar uma informação pro navegador
-    }
-
-    
+     res.render('site/contato'); //retorna o html   
 });
 
-console.log("localhost:8900");
-server.listen(8900);
+app.get('/',function(req,res){
+
+    res.render('site/home'); //retorna o html      
+});
+
+
+app.listen(8900, function(){
+    console.log("localhost:8900");
+});
